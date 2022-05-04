@@ -1,0 +1,45 @@
+$highlight-color: rgb(255, 102, 0);
+
+
+.container{
+
+    display: flex;
+    margin: .75in;
+    background-color: white;
+    align-items: center;
+
+    min-width: 900px;
+
+    .left{
+        flex: 0.5;
+
+        .myimage{
+            width: min(85%, 100%);
+        }
+    }
+
+    .right{
+        flex: 0.5;
+        width: min(85%, 100%);
+        margin-bottom: 1in;
+        
+    }
+}
+
+h2{
+    
+}
+
+
+button{
+
+    padding: 20px 50px;
+    margin: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.tooltip{
+    
+}

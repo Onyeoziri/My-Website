@@ -1,0 +1,56 @@
+.Nav{
+    background: #47515a31;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1000pc) / 2) ;
+    z-index: 10
+    
+}
+
+.Bar{
+    display: none;
+    color: #fff;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 75%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+}
+
+.NavMenu{
+    display: flex;
+    align-items: center;
+    margin-right: -24px;
+    /* Second Nav */
+    /* margin-right: 24px; */
+    /* Third Nav */
+    /* width: 100vw;
+    white-space: nowrap; */
+    
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    
+}
+
+.NavItem{
+    color: rgb(12, 0, 0);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 2.5rem;
+    height: 100%;
+    cursor: pointer;
+
+    &:active{
+        color: #b8cc61;
+    }
+}
