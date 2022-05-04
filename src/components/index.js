@@ -1,10 +1,13 @@
-export {default as Home} from './Home/Home';
+export {default as NavBar} from './NavBar/NavBar';
+export {default as Footer} from './Footer/Footer';
 
 //Compsci exports
-export {default as cHome} from './CompSci/cHome/cHome';
+export {default as cIntro} from './CompSci/Introduction/Intro'
+export {default as cProject} from './CompSci/Projects/Project'
+
 
 //Engineering exports
-export {default as eHome} from './Engineering/eHome/eHome';
+
+
 
 //Photography exports
-export {default as pHome} from './Photography/pHome/pHome';

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://onyeoziri.github.io/My-Website/",
+  "homepage": "http://onyeoziri.github.io/My-Website/",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,8 @@
     "gh-pages": "^3.2.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-icons": "^4.3.1",
+    "react-popper": "^2.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "sass": "^1.50.1",
