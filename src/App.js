@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {NavBar, Footer} from './components';
-import {ErrorPage, Home, cHome, eHome} from './pages';
+import {ErrorPage, Home, HomeComp, HomeEng} from './pages';
 
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/computerScience' element={<cHome />} />
-          <Route path='/e' element={<eHome />} />
+          <Route path='/computerScience' element={<HomeComp />} />
+          <Route path='/e' element={<HomeEng />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </Router>
