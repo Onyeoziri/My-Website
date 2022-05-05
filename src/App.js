@@ -1,6 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import {NavBar, Footer} from './components';
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import {ErrorPage, Home, HomeComp, HomeEng} from './pages';
 
 
@@ -17,6 +16,8 @@ function App() {
           <Route path='/computerScience' element={<HomeComp />} />
           <Route path='/e' element={<HomeEng />} />
           <Route path='*' element={<ErrorPage />} />
+
+          <Route path="/Website" element={<Navigate to="/" replace />}/>
         </Routes>
       </Router>
 

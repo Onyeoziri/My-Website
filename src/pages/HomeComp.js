@@ -1,16 +1,16 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import {NavBar, Footer} from '../components'
+import {NavBar, Footer, CompIntro, CompProject} from '../components'
 
 
 function HomeComp() {
   return (
-    <div>
-      <Router>
-        <NavBar />
-      </Router>
-      HomeComp
-      </div>
+    <div className='CompSciP'>
+      <NavBar/>
+      <CompIntro/>
+      <CompProject />
+      <Footer />
+    </div>
   )
 }
 

@@ -1,16 +1,22 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
-import {FaBars, AiOutlineFilePdf} from "react-icons/fa";
+import {FaBars, FaRegFilePdf} from "react-icons/fa";
 import styles from './NavBar.module.scss'
+import resume from '../../assets/documents/OI.Resume.pdf'
 
 function NavBar() {
   return (
     <div className={styles.Nav}>
 
       <FaBars className={styles.Bar} />
+      
 
       <div className={styles.NavMenu}>
         
+        <NavLink className={styles.NavItem} to="/">
+          Dash
+        </NavLink>
+
         <NavLink className={styles.NavItem} to="">
           Home
         </NavLink>
@@ -31,8 +37,8 @@ function NavBar() {
           Contacts
         </NavLink>
 
-        <NavLink className={styles.NavItem} to="">
-          
+        <NavLink className={styles.NavItem} onClick={() => window.open(resume)} to="">
+          <FaRegFilePdf className='PdfIcon'/>
           Resume
         </NavLink>
 
