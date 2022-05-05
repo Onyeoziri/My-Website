@@ -17,7 +17,7 @@ function App() {
           <Route path='/e' element={<HomeEng />} />
           <Route path='*' element={<ErrorPage />} />
 
-          <Route path="/Website" element={<Navigate to="/" replace />}/>
+          <Route path="/My-Website" element={<Navigate to="/" replace />}/>
         </Routes>
       </Router>
 

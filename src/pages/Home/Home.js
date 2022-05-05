@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 import styles from './Home.module.scss'
 import me from '../../assets/images/me.jpg'
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 
@@ -42,20 +41,23 @@ function Home() {
               disablePortal: true,
               }}
               onClose={TooltipClose}
-              open={open}
+              open={Open}
               disableFocusListener
               disableHoverListener
               disableTouchListener
               title="Coming Soon!"
+              placement="top"
             >
             <button onClick={TooltipOpen}>Engineering</button>
           </Tooltip>
-
         </ClickAwayListener>
-        <button>Engineering</button>
 
+        <Tooltip 
+          title="Coming Soon!"
+          placement="top"
+          >
         <button>Photography</button>
-      
+        </Tooltip>
         
         
       
